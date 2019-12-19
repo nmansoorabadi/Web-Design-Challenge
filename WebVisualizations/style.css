@@ -1,0 +1,40 @@
+body{
+    background-color: #fff;
+}
+
+.navbar{
+    max-height: 50px;
+    background-color: white;
+    font-size: 20px;
+    
+}
+.navbar-brand{
+
+    color: white;
+
+    margin-left: 30px;
+
+    padding: inherit;
+
+    font-weight: bold;
+
+    background-color:#08815b;
+
+    font-family: Georgia, 'Tahoma', Times, serif;
+
+}
+.dropdown-menu{-sm|-md|-lg|-xl}-right
+
+
+.container .row{
+    padding-bottom: 30px;
+}
+ 
+
+
+    
+
+
+
+
+

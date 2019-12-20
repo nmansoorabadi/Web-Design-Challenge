@@ -50,14 +50,54 @@
 
  <!-- Create Container -->
  <div class="container">
-   <div class="table-responsive">
-     <h1 align="center">Data</h1>
+   <table class="table-responsive">
+     <thead>
+       <tr class="tableheader">
+         <th>City_ID</th>
+         <th>City</th>
+         <th>Cloudiness</th>
+         <th>Country</th>
+         <th>Date</th>
+         <th>Humidity</th>
+         <th>Lat</th>
+         <th>Lng</th>
+         <th>Max Temp</th>
+         <th>Wind Speed</th>
+
+       </tr>
+
+     </thead>
+     <tbody>
+
+     </tbody>
+   </table> 
 
 
 
-   </div>
+   </table>
  </div>
-
+ <script>
+  $ (document)
+  .ready(function(){
+    $('Resources\asset').click(function(){
+      $.ajax({
+        url:"cities.csv",
+        dataType:"text",
+        success:function(data)
+        {
+ 
+          var cities_data=data.split(/\r?n|\r/);
+          var table_data='<table class="table table-bordered
+          table-striped">';
+        }
+ 
+      })
+    })
+ 
+ 
+  })
+  
+  </script>
 
 
 
@@ -68,25 +108,4 @@
 
  </body>
  </html>
- <script>
- $ (document)
- .ready(function(){
-   $('Resources\asset').click(function(){
-     $.ajax({
-       url:"cities.csv",
-       dataType:"text",
-       success:function(data)
-       {
-
-         var cities_data=data.split(/\r?n|\r/);
-         var table_data='<table class="table table-bordered
-         table-striped">';
-       }
-
-     })
-   })
-
-
- })
  
- </script>

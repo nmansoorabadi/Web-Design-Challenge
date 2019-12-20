@@ -7,40 +7,6 @@ body{
     max-height: 50px; 
 	background-color: #cacccb; 
     font-size: 15px; 
-}
-
-.navigation .navbar-brand{
-    color: white; 
-	margin-left: 50px; 
-	padding: inherit; 
-	font-weight: bold; 
-	background-color: #0ff1aa;
-	font-family: Georgia, Times, "Times New Roman", serif;
-
-}
-
-.img{
-    float: left;
-    
-}
-
-.box{
-    height: 500px;
-}
-
-.dropdown-item{
-    color: #30615c; 
-}
-
-.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:active{
-    background-color:#03584f; 
-}
-
-.nav-link:hover{
-    background-color:gray;
-}
-
-.navbar{
     max-height: none; 
     padding: inherit;
 }
@@ -51,11 +17,27 @@ body{
 
 }
 
-.navbar-brand{
-    padding: 10px; 
-}
-    
 
+.navbar-brand{
+    color: white; 
+	margin-left: 50px; 
+	padding: 10px; 
+	font-weight: bold; 
+	background-color: hsl(161, 96%, 32%);
+	font-family: Georgia, Times, "Times New Roman", serif;
+
+.dropdown-item{
+    color: #30615c; 
+    float: left;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color:#03584f; 
+}
+
+.nav-link:hover{
+    background-color:gray;
+}
 
 
   p {
@@ -78,13 +60,5 @@ body{
         background-color: #fff;
     }
 
-.column{
-    float: left;
-    width: 25%;
-    padding: 5px;
-}
 
-.responsive {
-    width: auto;
-    height: auto;
-}
+
